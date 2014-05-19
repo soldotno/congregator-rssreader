@@ -11,5 +11,5 @@ For debug output u should set DEBUG variable;
 ###Linux
 export DEBUG="*"
 
-Launch
+#Launch
 npm start
