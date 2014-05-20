@@ -4,6 +4,7 @@ exports = module.exports = [
         origin: 'feed',
         name: 'gamereactor 20 siste nyheter',
         url: 'http://www.gamereactor.no/rss/rss.php?texttype=4',
+        linkref: 'url',
         tags: ['technology', 'games'],
         format: 'desktop',
         body: true,
@@ -20,7 +21,7 @@ exports = module.exports = [
                     ]
                 },
                 {
-                    name: 'link',
+                    name: 'url',
                     type: 'url',
                     required: true,
                     items: [
@@ -75,7 +76,7 @@ exports = module.exports = [
                     ]
                 },
                 {
-                    name: 'link',
+                    name: 'url',
                     type: 'url',
                     required: true,
                     items: [
@@ -144,7 +145,7 @@ exports = module.exports = [
                     ]
                 },
                 {
-                    name: 'link',
+                    name: 'url',
                     type: 'url',
                     required: true,
                     items: [
@@ -203,7 +204,7 @@ exports = module.exports = [
                     ]
                 },
                 {
-                    name: 'link',
+                    name: 'url',
                     type: 'url',
                     required: true,
                     items: [
