@@ -1,53 +1,53 @@
 exports = module.exports = [
     {
-        active: false,
-        origin: 'feed',
-        name: 'gamereactor 20 siste nyheter',
-        url: 'http://www.gamereactor.no/rss/rss.php?texttype=4',
-        category: 1,
-        linkref: 'url',
-        format: 'desktop',
-        body: true,
-        template: {
-            elements: [
+        "active": false,
+        "origin": "feed",
+        "name": "gamereactor 20 siste nyheter",
+        "url": "http://www.gamereactor.no/rss/rss.php?texttype=4",
+        "category": 1,
+        "linkref": "url",
+        "format": "desktop",
+        "body": true,
+        "template": {
+            "elements": [
                 {
-                    name: 'guid',
-                    type: 'url',
-                    required: true,
-                    items: [
+                    "name": "guid",
+                    "type": "url",
+                    "required": true,
+                    "items": [
                         {
-                            selector: 'guid'
+                            "selector": "guid"
                         }
                     ]
                 },
                 {
-                    name: 'url',
-                    type: 'url',
-                    required: true,
-                    items: [
+                    "name": "url",
+                    "type": "url",
+                    "required": true,
+                    "items": [
                         {
-                            selector: 'link'
+                            "selector": "link"
                         }
                     ]
                 },
                 {
-                    name: 'title',
-                    required: true,
-                    items: [
+                    "name": "title",
+                    "required": true,
+                    "items": [
                         {
-                            selector: 'title'
+                            "selector": "title"
                         }
                     ]
                 },
                 {
-                    name: 'image',
-                    type: 'url',
-                    items: [
+                    "name": "image",
+                    "type": "url",
+                    "items": [
                         {
-                            selector: 'description',
-                            scrape: {
-                                selector: 'img',
-                                attribute: 'src'
+                            "selector": "description",
+                            "scrape": {
+                                "selector": "img",
+                                "attribute": "src"
                             }
                         }
                     ]
@@ -56,51 +56,51 @@ exports = module.exports = [
         }
     },
     {
-        active: false,
-        origin: 'feed',
-        name: 'spill.no',
-        url: 'http://www.spill.no/feed.aspx?list=news',
-        linkref: 'url',
-        category: 1,
-        format: 'desktop',
-        body: true,
-        template: {
-            elements: [
+        "active": false,
+        "origin": "feed",
+        "name": "spill.no",
+        "url": "http://www.spill.no/feed.aspx?list=news",
+        "linkref": "url",
+        "category": 1,
+        "format": "desktop",
+        "body": true,
+        "template": {
+            "elements": [
                 {
-                    name: 'guid',
-                    type: 'url',
-                    required: true,
-                    items: [
+                    "name": "guid",
+                    "type": "url",
+                    "required": true,
+                    "items": [
                         {
-                            selector: 'guid'
+                            "selector": "guid"
                         }
                     ]
                 },
                 {
-                    name: 'url',
-                    type: 'url',
-                    required: true,
-                    items: [
+                    "name": "url",
+                    "type": "url",
+                    "required": true,
+                    "items": [
                         {
-                            selector: 'link'
+                            "selector": "link"
                         }
                     ]
                 },
                 {
-                    name: 'title',
-                    required: true,
-                    items: [
+                    "name": "title",
+                    "required": true,
+                    "items": [
                         {
-                            selector: 'title'
+                            "selector": "title"
                         }
                     ]
                 },
                 {
-                    name: 'image',
-                    type: 'url',
-                    items: [
+                    "name": "image",
+                    "type": "url",
+                    "items": [
                         {
-                            selector: 'rss:image.#'
+                            "selector": "rss:image.#"
                         }
                     ]
                 }
@@ -108,123 +108,122 @@ exports = module.exports = [
         }
     },
     {
-        active: false,
-        origin: 'feed',
-        name: 'gamer.no',
-        url: 'http://www.gamer.no/feeds/general.xml',
-        linkref: 'url',
-        category: 1,
-        format: 'desktop',
-        body: true,
-        template: {
-            elements: [
+        "active": false,
+        "origin": "feed",
+        "name": "gamer.no",
+        "url": "http://www.gamer.no/feeds/general.xml",
+        "linkref": "url",
+        "category": 1,
+        "format": "desktop",
+        "body": true,
+        "template": {
+            "elements": [
                 {
-                    name: 'guid',
-                    type: 'url',
-                    required: true,
-                    items: [
+                    "name": "guid",
+                    "type": "url",
+                    "required": true,
+                    "items": [
                         {
-                            selector: 'guid'
+                            "selector": "guid"
                         },
                         {
-                            selector: 'link'
+                            "selector": "link"
                         },
                         {
-                            selector: 'title',
-                            decode: true
+                            "selector": "title",
+                            "decode": true
                         }
                     ]
                 },
                 {
-                    name: 'title',
-
-                    required: true,
-                    items: [
+                    "name": "title",
+                    "required": true,
+                    "items": [
                         {
-                            selector: 'title',
-                            decode: true
+                            "selector": "title",
+                            "decode": true
                         }
                     ]
                 },
                 {
-                    name: 'url',
-                    type: 'url',
-                    required: true,
-                    items: [
+                    "name": "url",
+                    "type": "url",
+                    "required": true,
+                    "items": [
                         {
-                            selector: 'link'
+                            "selector": "link"
                         }
                     ]
                 },
                 {
-                    name: 'image',
-                    type: 'url',
-                    items: [
+                    "name": "image",
+                    "type": "url",
+                    "items": [
                         {
-                            selector: 'enclosures[0].url'
+                            "selector": "enclosures[0].url"
                         }
                     ],
-                    fallback: 'http://static.tek.no/images/main/gamer-white.png'
+                    "fallback": "http://static.tek.no/images/main/gamer-white.png"
                 }
             ]
         }
     },
     {
-        active: false,
-        origin: 'feed',
-        name: 'hackernews',
-        url: 'https://news.ycombinator.com/rss',
-        linkref: 'url',
-        category: 1,
-        format: 'desktop',
-        body: true,
-        template: {
-            elements: [
+        "active": false,
+        "origin": "feed",
+        "name": "hackernews",
+        "url": "https://news.ycombinator.com/rss",
+        "linkref": "url",
+        "category": 1,
+        "format": "desktop",
+        "body": true,
+        "template": {
+            "elements": [
                 {
-                    name: 'guid',
-                    type: 'url',
-                    required: true,
-                    items: [
+                    "name": "guid",
+                    "type": "url",
+                    "required": true,
+                    "items": [
                         {
-                            selector: 'guid'
+                            "selector": "guid"
                         },
                         {
-                            selector: 'link'
+                            "selector": "link"
                         },
                         {
-                            selector: 'title',
-                            decode: true
+                            "selector": "title",
+                            "decode": true
                         }
                     ]
                 },
                 {
-                    name: 'title',
-                    required: true,
-                    items: [
+                    "name": "title",
+                    "required": true,
+                    "items": [
                         {
-                            selector: 'title'
+                            "selector": "title"
                         }
                     ]
                 },
                 {
-                    name: 'url',
-                    type: 'url',
-                    required: true,
-                    items: [
+                    "name": "url",
+                    "type": "url",
+                    "required": true,
+                    "items": [
                         {
-                            selector: 'link'
+                            "selector": "link"
                         }
                     ]
                 },
                 {
-                    name: 'image',
-                    type: 'url',
-                    items: [
+                    "name": "image",
+                    "type": "url",
+                    "items": [
                         {
-                            selector: 'enclosures[0].url'
+                            "selector": "enclosures[0].url"
                         }
                     ],
-                    fallback: 'https://news.ycombinator.com/y18.gif'
+                    "fallback": "https://news.ycombinator.com/y18.gif"
                 }
             ]
         }
