@@ -17,6 +17,12 @@ var getFeeds = function (options, callback) {
     callback(null, feeds.filter(isActive));
 };
 
+var markAsBroken = function (item, callback) {
+    item.broken = true;
+    debug('Broken source', util.inspect(item, { colors: true }));
+    callback(null, item);
+};
+
 // RssReader
 var RssReader = require('../lib');
 
@@ -24,6 +30,7 @@ var RssReader = require('../lib');
 var rssReader = new RssReader({
     getSources: getFeeds,
     handleEntry: handleEntry,
+    markAsBroken: markAsBroken,
     ipc: ipc,
     sockets: 15,
     waitTime: 10000,
