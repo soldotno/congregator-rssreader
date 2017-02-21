@@ -1,6 +1,8 @@
 congregator-rssreader
 =====================
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/soldotno/congregator-rssreader.svg)](https://greenkeeper.io/)
+
 RSS feed parser
 
 #Installation
